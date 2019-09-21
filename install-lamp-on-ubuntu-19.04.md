@@ -43,3 +43,17 @@ sudo nano /etc/apache2/sites-available/000-default.conf
 
 sudo a2enmod rewrite
 sudo service apache2 restart
+
+## SSH
+
+sudo apt-get install xclip
+ssh-keygen
+ssh-add ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub | xclip -selection clipboard
+
+Para testear que ande la coneccion
+ssh -T git@github.com
+
+Para set la rama por defento y no siempre ste pidiendo el origin master
+
+git branch --set-upstream-to=origin/master master
