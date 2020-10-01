@@ -4,7 +4,7 @@ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 
 sudo apt-get -y install apache2 \
-php7.2 libapache2-mod-php7.2 php7.2 php7.2-common php7.2-gd php7.2-mysql php7.2-curl php7.2-intl php7.2-xsl php7.2-mbstring php7.2-zip php7.2-bcmath php7.2-common php7.2-soap php7.2-json php7.2-pgsql php7.2-zip php7.2-xml \
+php7.4 libapache2-mod-php7.4 php7.4 php7.4-common php7.4-gd php7.4-mysql php7.4-curl php7.4-intl php7.4-xsl php7.4-mbstring php7.4-zip php7.4-bcmath php7.4-common php7.4-soap php7.4-json php7.4-pgsql php7.4-zip php7.4-xml \
 mysql-server mysql-client phpmyadmin \
 yarn nodejs node-less npm \
 git ssh curl xclip unrar p7zip-full unace unzip
@@ -20,7 +20,7 @@ flush privileges;
 
 SHOW GRANTS FOR 'admin'@'%';
 ## Aumentar la capacidad de subir archivos de php
-sudo nano /etc/php/7.2/apache2/php.ini
+sudo nano /etc/php/7.4/apache2/php.ini
 upload_max_filesize
 post_max_size
 ## En caso que necesito remover mysql y toda su configuracion
