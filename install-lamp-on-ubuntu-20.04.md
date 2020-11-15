@@ -12,6 +12,7 @@ git ssh curl xclip unrar p7zip-full unace unzip
 ## Configurar MySQL
 Nota: ya no se puede ingresar como usuario root a phpmyadmin, asi que hacer los siguientes pasos
 sudo mysql -p -u root
+
 	CREATE USER 'admin'@'%' IDENTIFIED BY 'password';
 	GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' WITH GRANT OPTION;
 	GRANT SELECT, INSERT ON *.* TO "admin"@"%" IDENTIFIED BY "password";
