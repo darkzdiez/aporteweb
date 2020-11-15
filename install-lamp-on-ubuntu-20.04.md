@@ -21,11 +21,11 @@ flush privileges;
 SHOW GRANTS FOR 'admin'@'%';
 
 ## Habilitar el root login
-sudo mysql -u root
-DROP USER 'root'@'localhost';
-CREATE USER 'root'@'%' IDENTIFIED BY '';
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
-FLUSH PRIVILEGES;
+	sudo mysql -u root
+	DROP USER 'root'@'localhost';
+	CREATE USER 'root'@'%' IDENTIFIED BY '';
+	GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+	FLUSH PRIVILEGES;
 
 ## Aumentar la capacidad de subir archivos de php
 sudo nano /etc/php/7.4/apache2/php.ini
