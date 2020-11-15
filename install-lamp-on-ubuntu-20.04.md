@@ -50,8 +50,8 @@ sudo nano /etc/apache2/sites-available/000-default.conf
 		Require all granted
 	</Directory>
 
-sudo a2enmod rewrite
-sudo service apache2 restart
+	sudo a2enmod rewrite
+	sudo service apache2 restart
 
 ## SSH
 
